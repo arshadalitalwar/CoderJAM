@@ -13,4 +13,9 @@ router.get("/", async (req, res) => {
   res.status(201).json({ data: hospitals });
 });
 
+router.patch("/:id", async (req, res) => {
+  const hospital = await Hospital.findByIdAndUpdate(req.params.id, req.body);
+  res.status(201).json({ data: hospital });
+});
+
 module.exports = router;
