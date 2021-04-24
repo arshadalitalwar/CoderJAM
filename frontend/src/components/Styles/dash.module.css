@@ -1,0 +1,133 @@
+.dash {
+  display: flex;
+  margin: 50px;
+  margin-top: 12vh;
+}
+.dash_left {
+  width: 75%;
+}
+.dash_left_profile {
+  display: flex;
+}
+.dash_left_profile > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.dash_left_profile > div > img {
+  height: 90%;
+  border-radius: 50%;
+  margin: 10px;
+}
+.dash_left > div {
+  align-items: center;
+}
+.dash_right {
+  background-color: #f7f7ff;
+}
+.dash_left_detail {
+  display: flex;
+  justify-content: space-around;
+}
+.dash_left_detail > div {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px rgb(230, 230, 230);
+  transition: 0.5s ease-in-out;
+}
+.dash_left_detail > div:hover {
+  width: 280px;
+  height: 220px;
+}
+.dash_left_reports {
+  display: grid;
+  grid-template-columns: auto;
+}
+.dash_left_reports > div {
+  width: 90%;
+  height: 100px;
+  box-shadow: 3px 3px 5px 6px rgb(230, 230, 230);
+  margin: 20px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  margin-left: 4%;
+}
+.dash_left_reports > div:hover {
+  width: 95%;
+  height: 120px;
+}
+.dash_left_reports > h2 {
+  margin: 30px;
+  color: gray;
+}
+.dash_left_bmi {
+  display: grid;
+}
+.dash_left_bmi > h2 {
+  margin: 30px;
+  color: gray;
+}
+.dash_left_bmi > div {
+  display: flex;
+  justify-content: space-around;
+}
+.dash_left_bmi > div > div {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px rgb(230, 230, 230);
+  transition: 0.5s ease-in-out;
+}
+.dash_left_bmi > div > div:hover {
+  width: 280px;
+  height: 220px;
+}
+.dash_right_calender > div {
+  margin: 10px;
+  margin-top: 30px;
+  box-shadow: 3px 3px 5px 6px rgb(230, 230, 230);
+}
+.dash_right_appointment {
+  display: grid;
+  grid-template-columns: auto;
+}
+.dash_right_appointment > div {
+  width: 90%;
+  box-shadow: 3px 3px 5px 6px rgb(230, 230, 230);
+  margin: 20px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+.dash_right_appointment > div:hover {
+  width: 95%;
+}
+.dash_right_appointment > h2 {
+  margin: 30px;
+  color: gray;
+}
+.dash_left_bmi_1 {
+  margin: 10px;
+  width: 75px;
+  height: 150px;
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-bottom-left-radius: 110px; /* 100px of height + 10px of border */
+  border: 10px solid gray;
+  border-right: 0;
+}
+.dash_right_appointment > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dash_right_appointment > div > div > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.dash_right_appointment > div > div > div {
+  color: gray;
+}

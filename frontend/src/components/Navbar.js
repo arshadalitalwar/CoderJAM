@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <div>
-        <img src="https://i.imgur.com/wJ5fdPf.png" alt="logo"></img>
+        <img src="https://i.imgur.com/6ETwsTP.png" alt="logo"></img>
       </div>
       <div>
         <Link href="/signUp/login">
