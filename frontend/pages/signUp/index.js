@@ -17,11 +17,16 @@ const RegisterPage =(props)=>{
                     <br/>
                     <input type='gender' placeholder='gender' required/>
                     <br/>
+                    <input type='number' placeholder='age' required/>
+                    <br/>
                     <input type='text' placeholder='city' required/>
                     <br/>
                     <input type='text' placeholder='state' required/>
                     <br/>
                     <input type='text' placeholder='country' required/>
+                    <br/>
+                    <input type="checkbox" id="covid" name="covid"/>
+                    <label for="covid"> COVID Positive</label>
                     <br/>
                     <Link href='/signUp/login'><input type='submit'/></Link>
                 </form>
