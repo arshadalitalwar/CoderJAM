@@ -1,0 +1,23 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 11vh;
+  width: 100%;
+  background-color: #8ab4f8;
+  box-shadow: 0 8px 6px -4px rgb(143, 143, 143);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Navbar > div > img {
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.Navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
