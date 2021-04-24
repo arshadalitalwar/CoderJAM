@@ -66,6 +66,16 @@
     background-color: rgb(189, 30, 22);
 }
 
+.registerFormInputs > form >input[type=checkbox]{
+    width: 5%;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+.registerFormInputs > form >label{
+    font-size: 20px;
+}
+/* login */
 .loginFormInputs{
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4);
