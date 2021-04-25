@@ -15,7 +15,7 @@ const Home = () => {
             </div>
             <div className={styles.mainPageImagesDiv}>
               <img 
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqBNJrR9qRm6E4jvyKwPU-oo9Rq-R6lDrUxFQerIEvBnU7MeTn-a1n4AzBz458bt02RA&usqp=CAU' 
+                src='https://i.pinimg.com/736x/2a/d9/36/2ad9365c45aed10d134f78a867707cb1.jpg' 
                 alt=''
               />
             </div>

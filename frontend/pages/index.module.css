@@ -67,5 +67,9 @@
 }
 
 .mainPageImagesDiv{
-    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.mainPageImagesDiv img{
+    width: 45%;
 }
