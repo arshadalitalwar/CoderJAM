@@ -5,7 +5,7 @@ const doctorSchema = mongoose.Schema({
   url: { type: String, require: true },
   isAvailable: { type: Boolean, require: true },
 });
-
+  
 const Doctor = mongoose.model("doctor", doctorSchema);
 
 module.exports = Doctor;

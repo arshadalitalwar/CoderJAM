@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
-
+const dotenv = require("dotenv");
+dotenv.config();
 const userController = require("./controllers/user.controller");
 const hospitalController = require("./controllers/hospital.controller");
 const doctorController = require("./controllers/doctor.controller");
@@ -12,10 +13,11 @@ app.use("/user", userController);
 app.use("/hospital", hospitalController);
 app.use("/doctor", doctorController);
 
+const port = process.env.PORT || 8000;
 const start = async () => {
   await connect();
-  app.listen(8000, () => {
-    console.log("Listening on 8000");
+  app.listen(port, () => {
+    console.log(`Listening on ${port}`);
   });
 };
 module.exports = start;
@@ -44,5 +46,5 @@ io.on("connection", (socket) => {
   })
 });
 
-const PORT = 8000;
-server.listen(PORT, () => console.log("Listening on 8000"));
+const PORT = 8100;
+server.listen(PORT, () => console.log("Listening on 8100"));
