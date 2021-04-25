@@ -1,8 +1,10 @@
 import styles from "../signUp/registerPage.module.css"
 //import { withRouter } from 'next/router';
 import Link from 'next/link'
+import React from "react"
 
 const Login =(props)=>{
+ 
     return (
         <>
             <div className={styles.registerForm}></div>
@@ -14,7 +16,7 @@ const Login =(props)=>{
                     <input type='password' placeholder='password' required/>
                     <br/>
                     <br/>
-                    <Link href='/signUp/dash'><input type='submit'/></Link>
+                    <Link href='/healthDetails'><input type='submit'/></Link>
                 </form>
             </div>
         </>

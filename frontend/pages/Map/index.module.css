@@ -1,6 +1,6 @@
 .popup{
     width: 300px;
-    height: 500px;
+    height: 550px;
     font-family: 'Roboto', sans-serif;
 }
 .img{
@@ -26,7 +26,8 @@
     color: #fff;
     border: 0;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .popup h4{
@@ -42,6 +43,12 @@
 .logo{
     margin-right: 20px;
 }
-
+.covid{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    background-color: rgb(233, 78, 78);
+    opacity: 0.5;
+}
 
 
