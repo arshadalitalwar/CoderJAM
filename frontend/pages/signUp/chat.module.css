@@ -1,0 +1,68 @@
+.chatParent{
+    /* border: 2px solid rgba(0, 0, 0, 0.699); */
+    padding: 10px;
+}
+
+.chatParent h1{
+    margin: 5px;
+    text-align: center;
+}
+
+.chatInput{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 5px;
+}
+
+.chatInput input{
+    font-size: 15px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(197, 193, 193, 0.534);
+}
+
+.chatInput button{
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(187, 42, 34, 0.89);
+    border: 0px;
+    color: white;
+}
+
+.chatMessagesDiv{
+    border: 1px solid gray;
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 5px 0px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatMessagesDiv>p:nth-child(1){
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chatButton{
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    font-size: 30px;
+    transition: all 0.5s linear;
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid #ff4a57; */
+    border-radius: 20%;
+    background-color: rgb(250, 249, 249);
+}
+
+.chatButton:hover{
+    background-color: rgb(238, 131, 131);
+}

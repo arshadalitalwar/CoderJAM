@@ -6,6 +6,8 @@ import router from "next/router";
 import Link from "next/link";
 import axios from "axios"
 import "react-calendar/dist/Calendar.css";
+import App from "./model"
+
 
 const dash = () => {
   const [value, onChange] = useState(new Date());
@@ -129,6 +131,14 @@ const dash = () => {
                 <h2>BP</h2>
                 <h1>{d.bp && `${d.bp}`}</h1>
               </div>
+              <div>
+                <h2>Diabetic</h2>
+                <h1>{d.diabetic && `${d.diabetic}`}</h1>
+              </div>
+              <div>
+                <h2>Others</h2>
+                <h1>{d.other && `${d.other}`}</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +166,8 @@ const dash = () => {
               </div>
               <div style={{ border: "1px solid #cfcfcf" }}></div>
               <div>
-                <img
+              <Link href="/chat"><App/></Link>
+                {/* <img
                   style={{
                     height: 50,
                     width: 50,
@@ -165,7 +176,7 @@ const dash = () => {
                   }}
                   src="https://i.imgur.com/yKWhUMW.png"
                   alt="Chat"
-                ></img>
+                ></img> */}
                 <img
                   style={{ height: 50, width: 50, cursor: "pointer" }}
                   src="https://i.imgur.com/ygmPhqA.png"
