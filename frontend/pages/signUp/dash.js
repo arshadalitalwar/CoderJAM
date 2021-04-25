@@ -4,18 +4,25 @@ import Calendar from "react-calendar";
 import { useState, useEffect } from "react";
 import router from "next/router";
 import Link from "next/link";
-
+import axios from "axios"
 import "react-calendar/dist/Calendar.css";
 
 const dash = () => {
   const [value, onChange] = useState(new Date());
   const [d, setD] = useState({});
+  const [data,setData] = useState([])
+
   useEffect(() => {
     let detail = localStorage.getItem("patientHealthData");
     detail = JSON.parse(detail);
     setD(detail);
-    console.log(d);
+    
+    return axios.get("http://localhost:8000/user").then((res)=>setData(res.data.data)).catch(err=>console.log(err))
+
   }, []);
+
+  console.log(data)
+  
 
   return (
     <>
@@ -133,16 +140,18 @@ const dash = () => {
           </div>
           <div className={styles.dash_right_appointment}>
             <h2>Appointments</h2>
-            <div>
+
+           {data?.map(item=>(
+              <div>
               <div>
                 <img
                   src="https://www.kindpng.com/picc/m/96-969073_male-doctor-flat-icon-vector-doctor-vector-png.png"
                   alt="doctor"
                 ></img>
                 <div>
-                  <h2>Dr. Ashok Seth</h2>
-                  <h3>Date - 26-Apr-2021</h3>
-                  <h3>Time - 05:30 PM </h3>
+                  <h2>{item.doctor.name}</h2>
+                  <h3>Date - {item.doctor.date}</h3>
+                  <h3>Time - {item.doctor.time} PM </h3>
                 </div>
               </div>
               <div style={{ border: "1px solid #cfcfcf" }}></div>
@@ -164,6 +173,8 @@ const dash = () => {
                 ></img>
               </div>
             </div>
+           ))}
+            
           </div>
         </div>
       </div>
