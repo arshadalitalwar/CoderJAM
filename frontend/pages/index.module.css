@@ -1,0 +1,71 @@
+.parent{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    /* border: 1px solid rgb(245, 120, 120); */
+    height: 97vh;
+}
+
+.parentNav{
+    /* border: 1px solid black; */
+}
+
+.mainImgParent{
+    /* border: 1px solid rgb(238, 51, 37); */
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.mainPageImg{
+    /* border: 1px solid rgb(19, 16, 180); */
+    text-align: center;
+}
+
+.mainPageImg img{
+    width: 90%;
+}
+
+.mainPageInfo{
+    /* border: 1px solid rgb(73, 202, 22); */
+}
+
+.mainPageInfoHeader{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.mainPageInfoHeader h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(99, 153, 238);
+}
+
+.mainPageHospInfo{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.mainPageHospInfo div{
+    /* border: 1px solid black; */
+    width: 30%;
+    text-align: center;
+    background-color: rgb(90, 146, 236);
+    color: rgb(243, 233, 233);
+    transition: all 0.5s linear;
+    border-radius: 10px;
+}
+
+.mainPageHospInfo div:hover{
+    background-color: rgb(175, 202, 245);
+    color: rgb(252, 0, 4);
+}
+
+.mainPageHospInfo div p span{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.mainPageImagesDiv{
+    /* border: 1px solid black; */
+}
