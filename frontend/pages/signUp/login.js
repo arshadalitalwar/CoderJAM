@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from "react"
 
 const Login =(props)=>{
+    const [email,setEmail] = React.useState("coderJam@gmail.com")
+    const [pass,setPass] = React.useState("coderjam123")
  
     return (
         <>
@@ -11,9 +13,9 @@ const Login =(props)=>{
             <div className={styles.loginFormInputs}>
                 <h1>Login</h1>
                 <form>
-                    <input type='email' placeholder='email' required/>
+                    <input type='email' placeholder='email' value={email}/>
                     <br/>
-                    <input type='password' placeholder='password' required/>
+                    <input type='password' placeholder='password' value={pass}/>
                     <br/>
                     <br/>
                     <Link href='/healthDetails'><input type='submit'/></Link>
