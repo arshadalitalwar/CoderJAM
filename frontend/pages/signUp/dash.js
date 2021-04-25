@@ -2,6 +2,7 @@ import Nav from "../../src/components/Dash/Nav";
 import styles from "../../src/components/Styles/dash.module.css";
 import Calendar from "react-calendar";
 import { useState } from "react";
+import router from "next/router"
 
 import "react-calendar/dist/Calendar.css";
 
@@ -43,7 +44,7 @@ const dash = () => {
                   alt="appointment"
                 ></img>
               </div>
-              <div>
+              <div onClick={()=>router.push("/Map/1")}>
                 <h2 style={{ color: "white" }}>Book Appointment</h2>
               </div>
             </div>

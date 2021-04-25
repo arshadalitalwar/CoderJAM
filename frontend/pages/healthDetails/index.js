@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styles from "../healthDetails/healthDetails.module.css"
-
+import router from "next/router"
 const index = () => {
     const [height,setHeight] = useState("")
     const [weight,setWeight] = useState("")
@@ -19,6 +19,7 @@ const index = () => {
         }
         localStorage.getItem("patientHealthData")
         localStorage.setItem("patientHealthData",JSON.stringify(patientData))
+        router.push("/signUp/dash")
     }
 
     return (
