@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faCalendarAlt, faHospital } from "@fortawesome/free-regular-svg-icons";
 import {faBed, faHospitalUser, faMapMarker, faUserMd, faWineBottle} from "@fortawesome/free-solid-svg-icons"
 import {withRouter} from "next/router"
+import axios from "axios";
 
 let data=
 {
@@ -22,11 +23,31 @@ let data=
     "name":"Dr. Suresh H. Advani",
     "url":"https://www.vaidam.com/sites/default/files/dr._suresh_h._advani_-_oncologist.jpg",
     "specialization":"Medical Oncologist",
-    "isAvailable":true
+    "isAvailable":true,
+    "time":"4.50",
+    "date":"25-04-2021"
     }]
     
 
+  
+  
+
 const Hospital = (props) => {
+  
+  const handlePush=(open)=>{
+    let payload= {
+     "email":"covid@gmail.com",
+     "password":"12345",
+     "hospital":data,
+     "doctor":open
+     }
+     
+     console.log(payload)
+     axios.post("http://localhost:8000/user",payload).then((res)=>console.log(res)).catch(err=>console.log("eee",err))
+
+     return props.router.push("/signUp/dash")
+
+  } 
     return (
       <>
       <NavBar></NavBar>
@@ -50,7 +71,7 @@ const Hospital = (props) => {
           <p style={{padding:"15px"}}><FontAwesomeIcon icon={faUserMd} className={styles.logo}/>{item.name}</p>
           <p><FontAwesomeIcon icon={faAddressCard} className={styles.logo}/>{item.specialization}</p>
           <p><FontAwesomeIcon icon={faCalendarAlt} className={styles.logo}/>Doctor available now</p>
-          <button onClick={()=>props.router.push("/signUp/dash")} className={styles.button2}>Book appoinment</button>
+          <button onClick={()=>handlePush(item)} className={styles.button2}>Book appoinment</button>
         </div>
         ))}
         

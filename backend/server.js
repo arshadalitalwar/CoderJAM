@@ -3,6 +3,7 @@ const app = express();
 app.use(express.json());
 const dotenv = require("dotenv");
 dotenv.config();
+
 const userController = require("./controllers/user.controller");
 const hospitalController = require("./controllers/hospital.controller");
 const doctorController = require("./controllers/doctor.controller");
